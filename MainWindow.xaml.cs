@@ -32,6 +32,13 @@ namespace WpfApp1
             string[] results = table1.GetNewStudentAndQuestion();
             questionBox.Text = results[0];
             nameBox.Text = results[1];
+
+        }
+
+        private void AddClick(object sender, RoutedEventArgs e)
+        {
+            throw new NotImplementedException();
+            //TODO: Add methods to add questions and/or names to database
         }
     }
 }

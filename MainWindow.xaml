@@ -14,9 +14,13 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="Interview Questions" TextAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
-        <Button Grid.Row="1" HorizontalAlignment="Center" Content="Next" VerticalAlignment="Center" FontSize="48" Click="Button_Click"/>
-        <TextBlock Grid.Row="2" x:Name="nameBox" HorizontalAlignment="Center" Text="Name" TextAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
-        <TextBlock Grid.Row="3" x:Name="questionBox" TextWrapping="WrapWithOverflow"  HorizontalAlignment="Center" Text="Question" TextAlignment="Center" VerticalAlignment="Center"  FontSize="48"/>
-
+        <Button Grid.Row="1" HorizontalAlignment="Center" Content="Get" VerticalAlignment="Center" FontSize="48" Click="Button_Click" Margin="229,18.5,466,19" Width="100"/>
+        <TextBox Grid.Row="2" x:Name="nameBox" HorizontalAlignment="Center" Text="Name" TextAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
+        <TextBox Grid.Row="3" x:Name="questionBox" TextWrapping="WrapWithOverflow"  HorizontalAlignment="Center" Text="Question" TextAlignment="Center" VerticalAlignment="Center"  FontSize="48"/>
+        <Button Grid.Row="1" HorizontalAlignment="Center" Content="Add" VerticalAlignment="Center" FontSize="48"  Margin="465,18.5,230,19" Width="100" Click="AddClick"/>
+        <!--TODO: Create TextBlock to add a new question-->
+        <!--TODO: Create TextBlock to add a new name-->
+        <!--TODO: Create Check boxes to indicate whether you want to add or request a technical or bahvior question-->
+        
     </Grid>
 </Window>

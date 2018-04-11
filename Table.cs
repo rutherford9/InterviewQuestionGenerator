@@ -10,18 +10,25 @@ namespace WpfApp1
     /// student id's and question id's for the next question to be asked.  Those classes are also 
     /// responsible for keeping track of the students picked and questions asked.
 
-    public class Table
+    internal class Table
     {
-        // Get connection string from txt file TODO encrypt and decrypt connectionString file.
+        //TODO: encrypt and decrypt connectionString file.
+        //Get connection string from txt file 
         private readonly string _connectionString = File.ReadAllText("connectString.txt");
         private string[] boxResults  = new string[2];
 
         public string[] GetNewStudentAndQuestion()
         {
+            /*
+             * TODO:  Create logic that checks to see whether the technical question of behavioral questionbox is checked
+             * depending on which one the user has selected, then call the appropriate method.
+             */
+
+
             //Create all the neccesary variables for getting data in the SQL DB.
             var sqlConn1 = new SqlConnection(_connectionString);
             //Get and track questions asked.
-            var questionRandomNum = Questions.GetQuestion();
+            var questionRandomNum = Questions.GetBehaviorQuestion();
             //Get and track students asked.
             var nameRandomNum = Students.GetStudent();
             string selectSql1 =
