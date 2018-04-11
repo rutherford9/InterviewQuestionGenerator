@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" HorizontalAlignment="Center" Text="Interview Questions" TextAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
+        <Button Grid.Row="1" HorizontalAlignment="Center" Content="Next" VerticalAlignment="Center" FontSize="48" Click="Button_Click"/>
+        <TextBlock Grid.Row="2" x:Name="nameBox" HorizontalAlignment="Center" Text="Name" TextAlignment="Center" VerticalAlignment="Center" FontSize="48"/>
+        <TextBlock Grid.Row="3" x:Name="questionBox" TextWrapping="WrapWithOverflow"  HorizontalAlignment="Center" Text="Question" TextAlignment="Center" VerticalAlignment="Center"  FontSize="48"/>
+
+    </Grid>
+</Window>
