@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace WpfApp1
 {
-    public class Students
+    internal class Students
     {
         static readonly List<int> namesPicked = new List<int>();
         private static int nameRandomNum;
