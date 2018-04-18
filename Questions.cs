@@ -8,7 +8,7 @@ namespace WpfApp1
         private static int _questionRandomNum;
         private static readonly List<int> QuestionsAsked = new List<int>();
 
-        public static int GetQuestion()
+        internal static int GetBehaviorQuestion()
         {
             var randomQuestionNum = new Random();
 
@@ -23,6 +23,18 @@ namespace WpfApp1
             { QuestionsAsked.Clear(); }
 
             return _questionRandomNum;
+        }
+
+        internal static int GetTechnicalQuestion()
+        {
+            //TODO: This will do the same as GetBehaviorQuestion except keep track of technical questions asked.
+            throw new NotImplementedException();
+        }
+
+        internal static string AddQuestion()
+        {
+            //TODO: Add ability to add questions.  Don't forget to create the TextBlock to get user input
+            throw new NotImplementedException();
         }
     }
 }
