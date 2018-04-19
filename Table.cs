@@ -56,7 +56,7 @@ namespace WpfApp1
             //Get the next student from the DB.
             var cmd2 = new SqlCommand(selectSql2);
             cmd2.Connection = sqlConn1;
-
+           
             using (SqlDataReader read = cmd2.ExecuteReader())
             {
                 while (read.Read())
@@ -71,7 +71,12 @@ namespace WpfApp1
         }
 
 
-        //mike
+        
 
     }
 }
+// Add your name to this list
+// Shane  
+// Dwayne
+// Mike
+
