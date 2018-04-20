@@ -11,7 +11,12 @@ namespace WpfApp1
     /// responsible for keeping track of the students picked and questions asked.
 
     internal class Table
+
+
     {
+
+        //qwop
+        //lorem ipsum mike added 4/18
         //TODO: encrypt and decrypt connectionString file.
         //Get connection string from txt file 
         private readonly string _connectionString = File.ReadAllText("connectString.txt");
@@ -51,7 +56,7 @@ namespace WpfApp1
             //Get the next student from the DB.
             var cmd2 = new SqlCommand(selectSql2);
             cmd2.Connection = sqlConn1;
-
+           
             using (SqlDataReader read = cmd2.ExecuteReader())
             {
                 while (read.Read())
@@ -64,5 +69,14 @@ namespace WpfApp1
                 return boxResults;
             }
         }
+
+
+        
+
     }
 }
+// Add your name to this list
+// Shane  
+// Dwayne
+// Mike
+
